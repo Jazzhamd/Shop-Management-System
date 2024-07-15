@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.icon-container {
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 200px;
+    padding-left:10px;
+    transition: transform 0.5s;
+    z-index:1000;
+   
+
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #f4f4f4;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+.container1{
+    background-color: #1B1B1B;
+    color: white;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    
+}
+.container1 .side-bar{
+    position:fixed;
+    height:100%;
+    width: 0px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1B1B1B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.container1 .side-bar a{
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.663);
+    margin: 20px;
+    font-size: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+}
+.container1 .side-bar a:not(#contact-us)::after{
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    content: "";
+    background-color:#F78702;
+    height: 2px;
+    width: 0%;
+    transition: all 0.3s;
+}
+.container1 .side-bar a:not(#contact-us):hover{
+    color: #F78702;
+}
+.container1 .side-bar a:not(#contact-us):hover::after{
+    width: 100%;
+}
+.container1 .side-bar #contact-us{
+    border: 2px solid rgba(255, 255, 255, 0.663);
+    border-radius: 40px;
+    margin-top:15px;
+    padding: 13px;
+    font-size: 20px;
+} 
+.container1 .side-bar #contact-us:hover{
+    border: 2px solid #F78702;
+    color: #F78702;
+    background-color: black;
+}
+.container1 .side-bar a:nth-child(1){
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* HEADER SECTION */
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 30px;
+}
+header .menu-bar a{
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.663);
+    margin: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s;
+}
+header .menu-bar a:not(#contact-us)::after{
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    width: 0%;
+    transition: all 0.3s;
+}
+header .menu-bar a:not(#contact-us):hover{
+    color: white;
+}
+header .menu-bar a:not(#contact-us):hover::after{
+    width: 100%;
+}
+header .menu-bar #contact-us{
+    border: 2px solid rgba(255, 255, 255, 0.663);
+    border-radius: 40px;
+    padding: 13px;
+    font-size: 20px;
+} 
+header .menu-bar #contact-us:hover{
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+}
+header .menu-bar a:nth-child(2){
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container h1{
+    color: rgb(71, 71, 71);
+    margin-top: 70px;
+}
+.container hr{
+    background-color: rgba(85, 85, 85, 0.722);
+    width: 20%;
+    height: 4px;
+    margin: 10px auto;
+    margin-bottom: 60px;
+}
+.container .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.container .content .member{
+    width: 25vw;
+    height: auto; 
+    margin: 20px; 
+    padding: 20px; 
+    box-shadow: 0px 2px 6px rgb(131, 131, 131);
+    transition: 0.5s ease-in-out;
+    box-sizing:border-box;
+}
+.container .content .member img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+.container .content .member h2{
+    color: black;
+    font-size: 21px;
+    letter-spacing: 0.02cm;
+    margin-bottom: 15px;
+}
+.container .content .member p{
+    color: grey;
+    letter-spacing: 0.05cm;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.container .content .member .icons{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.container .content .member .icons span{
+    margin: auto;
+    margin: 10px;
+}
+
+.container .content .member:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: black;
+
+}
+.container .content .member:hover h2{
+    color:white;
+}
+.container .content .member:hover p{
+    color:white;
+}
+
+.headSection {
+    display: flex;
+
+    margin: 30px 15px 35px 15px;
+    padding-bottom: 16px;
+    padding-left:17px;
+}
+
+.storeDetails {
+    display: block;
+    justify-content: left;
+}
+
+.storename {
+    font-size: 70px;
+    text-align: left;
+    padding-right: 80px;
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:10px;
+    
+
+}
+.submit button{
+    text-transform: uppercase;
+	font-size:20px;
+	outline:none;
+	border:2px solid white;
+	border-radius: 30px;
+	width:100px;
+	cursor:pointer;
+    height:40px;
+    transition: all 0.4s;
+}
+ .submit button:hover{
+  background-color: black;
+  color: white;
+}
+.submit button a{
+    color: black;
+    text-decoration: none;
+}
+.submit button:hover a{
+    color: white;
+}
